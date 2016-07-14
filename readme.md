@@ -2,7 +2,9 @@
 
 ## Learning Objectives
 - Leverage objects within other constructors
-- Create a View Constructor to generate HTML with objects
+- define a model using a constructor function
+- define a view using a constructor function
+- use the view constructor to render HTML
 
 ## Framing
 We've learned a lot about objects. Whether they be object literals or objects instantiated with constructor functions. The purpose of this class is to learn how to create "views" using a constructor function. However, the implications from view constructors are enormous. The basic idea is the ability to pass in an object as an argument to another constructor.
@@ -66,10 +68,8 @@ function Person(name, age, dog){
 With the above code we can now do things like this:
 
 ```js
-// using more explicit variable names to highlight what is being passed in as
-// the 3rd argument to our Person constructor
-var buddyVar = new Dog("Buddy", "Blue Heeler");
-var spotVar = new Dog("Spot", "Greyhound");
+var buddy = new Dog("Buddy", "Blue Heeler");
+var spot = new Dog("Spot", "Greyhound");
 var sue = new Person("Sue Q", 32, buddyVar);
 var bob = new Person("Bob Evans", 52, spotVar);
 
@@ -84,6 +84,8 @@ sue.pet.breed
 Well, that's cool. Let's step back and think about this.
 
 If our application grows and things about `Dog`s change, our `Person` constructor doesn't care. The `Dog` behavior isn't tightly coupled to our `Person` only in so far as a `Dog` object is a property of our `Person` objects. If we were to add properties or methods to `Dog` nothing in our existing code base would break at all. That's really awesome. Moving forward in this class, we really need to start thinking about separating our concerns.
+
+> look into this stackoverflow response on [cohesion & coupling](http://stackoverflow.com/questions/3085285/cohesion-coupling)
 
 Let's take this a step further.
 
