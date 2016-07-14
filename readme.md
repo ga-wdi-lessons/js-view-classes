@@ -257,4 +257,5 @@ If our PM comes to us and says the makeBlue feature is no good and instead needs
 
 Let's step back and think about how we leveraged OOJS. Realistically this is just one of literally limitless implementations of how we can make objects communicate with each other. Think of the power you can harness when you have a full understanding of object oriented design. The instructors will tell you, this stuff is hard. It's probably the hardest concept we cover in all of WDI. It's hard for the instructors too!
 
-## You Do - Amazon Clone
+## You Do - Wamazon
+Clone [this repo](https://github.com/ga-wdi-exercises/wamazon) and build Wamazon.
