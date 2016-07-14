@@ -178,6 +178,27 @@ The `.render()` function calls the `.template()` function and stores the return 
 > `el` is a convention thats used to denote element. We use `el` here as a property of the StudentView.
 
 ### Putting It All Together
+Alright, let's connect all these files in our `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Container for all our students -->
+  <div class="students"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="studentData.js"></script>
+  <script src="studentModel.js"></script>
+  <script src="studentView.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
 Great! Got all this awesome code let's spin up our browser and check it out! Opening `index.html` annndd.. nothing...Hmm. What's missing?
 
 If we look carefully, we still haven't actually *done* anything with this code yet, all we've done is define functions. Let's do something.
