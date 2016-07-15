@@ -55,7 +55,7 @@ Something like this:
 ```js
 function Dog(name, breed){
   this.name = name;
-  this.age = age;
+  this.breed = breed;
 }
 
 function Person(name, age, dog){
@@ -70,8 +70,8 @@ With the above code we can now do things like this:
 ```js
 var buddy = new Dog("Buddy", "Blue Heeler");
 var spot = new Dog("Spot", "Greyhound");
-var sue = new Person("Sue Q", 32, buddyVar);
-var bob = new Person("Bob Evans", 52, spotVar);
+var sue = new Person("Sue Q", 32, buddy);
+var bob = new Person("Bob Evans", 52, spot);
 
 buddy.name
 spot.breed
