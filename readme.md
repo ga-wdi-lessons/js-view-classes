@@ -27,7 +27,7 @@ Let's take a couple simple JS classes:
 class Dog {
   constructor(name, breed){
     this.name = name;
-    this.age = age;
+    this.breed = breed;
   }
 }
 
