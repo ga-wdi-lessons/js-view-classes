@@ -288,6 +288,19 @@ Now, we could've just put the functionality of `makeBlue()` inside the click eve
 
 If our PM comes to us and says the makeBlue feature is no good and instead needs to change to random colors on click, we know exactly where we need to go. We don't have to scour through our entire code base. We know it's part of the `StudentView` class because it has to do with `view`s. Additionally we can just look through all of our prototype functions and see if that feature is stored in one of those.
 
+### Code Review - Circle Therapy
+[This](https://github.com/andrewsunglaekim/circle_therapy) is a website that's leveraging object oriented JS. Check out [the live site](https://andrewsunglaekim.github.io/circle_therapy/) to see how it works. It's implementations are vastly different than that of the student viewer app built earlier. However, it's still using the same principles of OOJS.
+
+Identify the following things and where they happen in code:
+
+1. What happens when you click on the page?
+2. What happens when you click on a circle?
+3. How does rotation work?
+4. How does the positioning of the circle work?
+5. How does the color happen?
+6. How is `.setInterval()` working? How is it being cleared?
+7. What's the model in this app?
+
 ### Thinking about OOJS
 
 Let's step back and think about how we leveraged OOJS. Realistically this is just one of literally limitless implementations of how we can make objects communicate with each other. Think of the power you can harness when you have a full understanding of object oriented design. The instructors will tell you, this stuff is hard. It's probably the hardest concept we cover in all of WDI. It's hard for the instructors too!
