@@ -130,7 +130,7 @@ let data = [
 
 > Because we don't have a backend, this data will serve as our backend.
 
-If we look at this data, we can see that its just an array of objects stored in `var students`. Each object has 4 properties(name, age, favorite food and an image url). Pretty standard and many of us used very similar data structures for project 1.
+If we look at this data, we can see that its just an array of objects stored in `var data`. Each object has 4 properties(`name`, `age`, `favoriteFood` and an `imgUrl`). Pretty standard and many of us used very similar data structures for project 1.
 
 ### The Model Class
 We'll be seeing the term `model` come up again soon in week 5 but we'll quickly introduce it here. At a high level, the model is how our data gets represented/structured at the application level. Let's build a class function that will represent our model for a student. This will be a pretty simple class.
@@ -250,7 +250,7 @@ In `studentView.js`:
 ```js
 // ... more code above (look above in the lesson plan for the code above the render function)
 render(){
-    this.el = this.template()
+  this.el = this.template()
 },
 makeBlue(){
   this.el.css("background", "blue")
